@@ -149,12 +149,12 @@ print(circum_of_circle)
 
 # Check if the floor division of 7 by 3 is equal to the 
 # int converted value of 2.7.
+print((7//3) == (int(2.7)))
 
 # Check if type of '10' is equal to type of 10
 print((type('10'))==(type(10)))
 
 # Check if int('9.8') is equal to 10
-print((int('9.8'))==(10))
 
 
 # Writ a script that prompts the user to enter hours and rate per hour. 
@@ -162,10 +162,22 @@ print((int('9.8'))==(10))
 # Enter hours: 40
 # Enter rate per hour: 28
 # Your weekly earning is 1120
+hours = int(input("Enter hours: "))
+rate = int(input("Enter rate per hour: "))
+weekly_earning = hours * rate
+print(weekly_earning)
 
-# Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+
+# Write a script that prompts the user to enter number of years. 
+# Calculate the number of seconds a person can live.
+# Assume a person can live hundred years
 # Enter number of years you have lived: 100
 # You have lived for 3153600000 seconds.
+hours = int(input("Enter number of years: "))
+number_of_sec = hours * 31536000 
+print(number_of_sec)
+
+
 # Write a Python script that displays the following table
 # 1 1 1 1 1
 # 2 1 2 4 8
